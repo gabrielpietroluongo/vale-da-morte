@@ -1,21 +1,15 @@
 clc
 clear
 clear functions
-%
-% -----------------------------------------------------------
-% 	Introducao ao Calculo Numerico usando o Octave/Matlab		              
-%             Prof. Andrea Valli
-%------------------------------------------------------------
-% Descricao do Trabalho 
-% -----------------------------------------------------------
+% Descrição do trabalho
 introd
 disp(' ');
-disp('Tecle alguma coisa para continuar...'); pause
+input('Pressione Enter para continuar...');
 %
 % -----------------------------------------------------------
-% Parte I - Resolucao de Sistemas Lineares
+% Parte I - Sistemas Lineares
 % -----------------------------------------------------------
-ex1
+p1
 disp(' ');
 disp('Tecle alguma coisa para continuar...'); pause
 %
