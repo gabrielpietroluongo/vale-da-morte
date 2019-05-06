@@ -1,10 +1,12 @@
 clc
 clear
-clear functions
-% Descrição do trabalho
+
+% Carrega as strings do arquivo de strings
+strings
+
+% Mostra a descrição do trabalho
 introd
-disp(' ');
-input('Pressione Enter para continuar...');
+
 %
 % -----------------------------------------------------------
 % Parte I - Sistemas Lineares

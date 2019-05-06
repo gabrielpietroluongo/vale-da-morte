@@ -1,6 +1,5 @@
 % Introdução do trabalho
 clc
-clear
 disp('--------------------------------------------------');
 disp('Primeiro trabalho de Algoritmos Numéricos'); 
 disp('Profª Andrea Valli');
@@ -26,3 +25,5 @@ disp(' ');
 disp('1. Utilizar regressão linear para modelar adequadamente uma função seguindo os dados apresentados.');
 disp('2. Analisar o crescimento de uma bactéria seguindo dois modelos de Michaelis-Menten.');
 
+disp(' ');
+input(s_Enter_Continue);
