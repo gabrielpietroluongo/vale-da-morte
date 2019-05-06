@@ -44,11 +44,20 @@ close;
 # FIXME: Fazer isso aqui funcionar grr
 # Matriz nx1 joga um erro de "nonconformant arguments" para o operador '/'!!
 # Provavelmente isso deveria ser ones (n, 1) mesmo, mas conceitualmente
-# tem algum erro aqui.
-n = columns (A)
-b = A * ones (n, n);
-x = A/b;
-disp (s_Solution_Found);
-disp ("0");
+# tem algum erro aqui. Seguindo a especificação teríamos n = rows (a),
+# e b sendo derivado desse valor, mas mesmo assim continua errado.
+# n = rows (A)
+# b = A * ones (n, 1);
+# x = A/b
+# disp (s_Solution_Found);
+# disp (" ");
+# input (s_Enter_Continue);
+clc
+# Análise do condicionamento
+c = cond (A);
+disp (s_LU_Cond_Display);
+disp(c);
+disp(" ");
+disp(s_LU_High_Cond);
 disp(" ");
 input (s_Enter_Continue);

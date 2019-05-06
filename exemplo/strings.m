@@ -45,4 +45,12 @@ abaixo da diagonal principal.";
 
 s_Solution_Found = "A solução encontrada para o sistema foi:";
 
+s_LU_Cond_Display = "O valor de condicionamento calculado foi:";
+
+s_LU_High_Cond = "O valor de condicionamento encontrado para a matriz foi \
+expressivamente elevado, o que indica que o sistema está mal condicionado.";
+
+s_LU_Low_Cond = "O valor de condicionamento encontrado para a matriz foi \
+relativamente baixo, o que indica que o sistema está bem condicionado."; 
+
 s_Separator_100 = "----------------------------------------------------------------------------------------------------";
