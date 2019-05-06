@@ -25,4 +25,22 @@ matriz original A por meio do produto dos determinantes das matrizes L e U, \
 o que é computacionalmente trivial dado que os determinantes de L e U são os \
 produtos de suas respectivas diagonais principais.";
 
+s_LU_First_Mat_Display = "Primeira matriz: fs_183_3.mat";
+
+s_LU_First_L = "A janela aberta é o gráfico de esparsidade da matriz L.\n\n\
+Analisando o gráfico, é possível constatar a principal característica da \
+matriz L: todos os elementos abaixo da diagonal principal (elementos acima \
+da diagonal principal são definidos como zeros. Essa distribuição é o que \
+caracteriza a matriz L.";
+
+s_LU_First_U = "A janela aberta é o gráfico de esparsidade da matriz U.\n\n\
+De forma análoga ao gráfico da matriz L, o gráfico da matriz U é \
+caracterizado pela presença exclusiva de elementos acima da diagonal principal\
+, sendo os definidos como zeros.";
+
+s_LU_First_A = "A janela aberta é o gráfico de esparsidade da matriz A.\n\n\
+Por fim, analisando o gráfico de A é possível visualizar a matriz original. \
+Como esperado, a matriz original é composta por fatores tanto acima quanto \
+abaixo da diagonal principal.";
+
 s_Separator_100 = "----------------------------------------------------------------------------------------------------";
