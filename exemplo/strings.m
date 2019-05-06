@@ -14,10 +14,15 @@ s_Intro_Direct = "Primeira parte do trabalho - Análise de métodos diretos.";
 s_LU_Exp = "A primeira parte do trabalho consiste na análise de métodos \
 diretos. Inicialmente, será realizada a análise da fatoração LU, focando nas \
 esparsidades das matrizes L e U. \nA fatoração LU consiste no cálculo de \
-fatores L e U de dada matriz A tal que as matrizes L e U satisfaçam as \
-seguintes equações: \n\nLy = b\nUx = y\n\n\
-Por conseguinte, temos que a matriz A pode ser escrita na forma A=LU. A \
-vantagem do método é que resolvemos dois sistemas diagonais ao invés de um \
-único sistema cujo condicionamento não é necessariamente o ideal.";
+fatores L e U de dada matriz A tal que A = PLU, sendo P a matriz de \
+permutação,  e que as matrizes L e U satisfaçam as seguintes equações:\
+\n\nLy = b\nUx = y\n\n\A maior vantagem desse método é a alta eficiência \
+computacional, dado que é possível resolver o sistema novamente para \
+qualquer vetor b escolhido sem a necessidade de realizar a eliminação \
+Gaussiana novamente, dado que L e U são matrizes diagonais e, portanto, \
+já estão escalonadas. Adicionalmente, é possível calcular o determinante da \
+matriz original A por meio do produto dos determinantes das matrizes L e U, \
+o que é computacionalmente trivial dado que os determinantes de L e U são os \
+produtos de suas respectivas diagonais principais.";
 
 s_Separator_100 = "----------------------------------------------------------------------------------------------------";
