@@ -43,4 +43,6 @@ Por fim, analisando o gráfico de A é possível visualizar a matriz original. \
 Como esperado, a matriz original é composta por fatores tanto acima quanto \
 abaixo da diagonal principal.";
 
+s_Solution_Found = "A solução encontrada para o sistema foi:";
+
 s_Separator_100 = "----------------------------------------------------------------------------------------------------";

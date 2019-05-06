@@ -41,7 +41,14 @@ spy (A);
 input (s_Enter_Continue);
 close;
 
-# TODO - Fazer isso aqui funcionar grr
-b = A * ones(cols(A), 1);
+# FIXME: Fazer isso aqui funcionar grr
+# Matriz nx1 joga um erro de "nonconformant arguments" para o operador '/'!!
+# Provavelmente isso deveria ser ones (n, 1) mesmo, mas conceitualmente
+# tem algum erro aqui.
+n = columns (A)
+b = A * ones (n, n);
 x = A/b;
-disp("A solução calculada do sistema foi x = " + x);
+disp (s_Solution_Found);
+disp ("0");
+disp(" ");
+input (s_Enter_Continue);
