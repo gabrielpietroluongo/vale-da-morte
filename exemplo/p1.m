@@ -127,3 +127,62 @@ disp (" ");
 disp (s_LU_High_Cond);
 disp (" ");
 input (s_Enter_Continue);
+
+##############################################################################
+# Terceira matriz
+##############################################################################
+clear -except strings
+load ("../dados/bcsstk01.mat");
+A = Problem.A;
+[L, U, P] = lu (A);
+
+# Análise da matriz L
+clc
+disp (s_LU_Third_Mat_Display);
+disp (" ");
+disp (" ");
+disp (s_LU_Third_L);
+spy (L);
+input (s_Enter_Continue);
+close;
+
+# Análise da matriz U
+clc;
+disp (s_LU_Third_Mat_Display);
+disp (" ");
+disp (" ");
+disp (s_LU_Third_U);
+spy (U);
+input (s_Enter_Continue);
+close;
+
+# Análise da matriz A
+clc;
+disp (s_LU_Third_Mat_Display);
+disp (s_LU_Third_A);
+spy (A);
+input (s_Enter_Continue);
+close;
+
+# FIXME: Fazer isso aqui funcionar grr
+# Matriz nx1 joga um erro de "nonconformant arguments" para o operador '/'!!
+# Provavelmente isso deveria ser ones (n, 1) mesmo, mas conceitualmente
+# tem algum erro aqui. Seguindo a especificação teríamos n = rows (a),
+# e b sendo derivado desse valor, mas mesmo assim continua errado.
+# n = rows (A)
+# b = A * ones (n, 1);
+# x = A/b
+# disp (s_Solution_Found);
+# disp (" ");
+# input (s_Enter_Continue);
+clc;
+# Análise do condicionamento
+disp (s_LU_Calc_Cond);
+c = cond (A);
+clc;
+disp (s_LU_Cond_Display);
+disp (c);
+disp (" ");
+disp (s_LU_High_Cond);
+disp (" ");
+input (s_Enter_Continue);

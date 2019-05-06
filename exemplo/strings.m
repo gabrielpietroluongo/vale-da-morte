@@ -72,13 +72,19 @@ original A por meio desse gráfico.";
 
 # Terceira matriz
 
-s_LU_Third_Mat_Display = "s_LU_Third_Mat_Display";
+s_LU_Third_Mat_Display = "Terceira matriz: bcsstk01.mat";
 
-s_LU_Third_L = "s_LU_Third_L";
+s_LU_Third_L = "A janela aberta é o gráfico de esparsidade da matriz L.\n\n\
+Como nas matrizes anteriores, o comportamento padrão da matriz L é \
+perceptível na estrutura da matriz L.";
 
-s_LU_Third_U = "s_LU_Third_U";
+s_LU_Third_U = "A janela aberta é o gráfico de esparsidade da matriz U\n\n\
+Assim como nas matrizes anteriores, o comportamento da matriz U segue a \
+definição, com elementos posicionados exclusivamente acima da diagonal \
+principal da matriz.";
 
-s_LU_Third_A = "s_LU_Third_A";
+s_LU_Third_A = "A janela aberta é o gráfico de esparsidade da matriz A\n\n\
+A distribuição dos elementos de A segue a equação PA = LU.";
 
 # Genéricos
 
