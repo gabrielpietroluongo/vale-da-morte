@@ -9,6 +9,14 @@
 
 s_Enter_Continue = "Pressione Enter para continuar";
 
+s_Separator_100 = "----------------------------------------------------------------------------------------------------";
+
+##############################################################################
+#
+# Primeira Parte - Métodos Diretos
+#
+##############################################################################
+
 s_Intro_Direct = "Primeira parte do trabalho - Análise de métodos diretos.";
 
 s_LU_Exp = "A primeira parte do trabalho consiste na análise de métodos \
@@ -24,6 +32,8 @@ já estão escalonadas. Adicionalmente, é possível calcular o determinante da 
 matriz original A por meio do produto dos determinantes das matrizes L e U, \
 o que é computacionalmente trivial dado que os determinantes de L e U são os \
 produtos de suas respectivas diagonais principais.";
+
+# Primeira Matriz
 
 s_LU_First_Mat_Display = "Primeira matriz: fs_183_3.mat";
 
@@ -43,6 +53,35 @@ Por fim, analisando o gráfico de A é possível visualizar a matriz original. \
 Como esperado, a matriz original é composta por fatores tanto acima quanto \
 abaixo da diagonal principal.";
 
+# Segunda matriz
+
+s_LU_Second_Mat_Display = "Segunda matriz: orsirr_1.mat";
+
+s_LU_Second_L = "A janela aberta é o gráfico de esparsidade da matriz L.\n\n\
+Assim como na primeira matriz, é possível observar o comportamento \
+característico da matriz L: elementos posicionados exclusivamente abaixo \
+da diagonal principal.";
+
+s_LU_Second_U = "A janela aberta é o gráfico de esparsidade da matriz U.\n\n\
+Novamente podemos observar a organização da matriz U, com elementos presentes\
+ acima da diagonal principal como esperado.";
+
+s_LU_Second_A = "A janela aberta é o gráfico de esparsidade da matriz A.\n\n\
+Novamente, é possível visualizar a distribuição dos elementos da matriz \
+original A por meio desse gráfico.";
+
+# Terceira matriz
+
+s_LU_Third_Mat_Display = "s_LU_Third_Mat_Display";
+
+s_LU_Third_L = "s_LU_Third_L";
+
+s_LU_Third_U = "s_LU_Third_U";
+
+s_LU_Third_A = "s_LU_Third_A";
+
+# Genéricos
+
 s_Solution_Found = "A solução encontrada para o sistema foi:";
 
 s_LU_Cond_Display = "O valor de condicionamento calculado foi:";
@@ -53,4 +92,4 @@ expressivamente elevado, o que indica que o sistema está mal condicionado.";
 s_LU_Low_Cond = "O valor de condicionamento encontrado para a matriz foi \
 relativamente baixo, o que indica que o sistema está bem condicionado."; 
 
-s_Separator_100 = "----------------------------------------------------------------------------------------------------";
+s_LU_Calc_Cond = "Calculando condicionamento...";
