@@ -135,3 +135,13 @@ Portanto, temos que o valor ideal de ω é %d.\n";
 s_Sol_Lambda_SOR_1 = "Como observamos que ω = 1 é o valor ideal para o \
 método SOR, temos que a aplicação do método SOR nesse caso será idêntica \
 à aplicação do método Gauss-Seidel.";
+
+##############################################################################
+#
+# Segunda Parte - Ajustes de curvas
+#
+##############################################################################
+
+s_Adjust_Freeze_FName = "ajuste_congelamento.txt";
+
+s_Adjust_Bacteria_FName = "ajuste_bacteria.txt";

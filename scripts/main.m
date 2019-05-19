@@ -20,3 +20,8 @@ p2
 disp('Fim da questão 2');
 disp(' ');
 input('Tecle alguma coisa para continuar...');
+
+p3
+disp('Fim da questão 3');
+disp(' ');
+input('Tecle alguma coisa para continuar...');
