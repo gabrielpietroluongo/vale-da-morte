@@ -18,7 +18,7 @@ A = Problem.A;
 [L, U, P] = lu (A);
 
 # Análise da matriz L
-clc
+clc;
 disp (s_LU_First_Mat_Display);
 disp (" ");
 disp (" ");
@@ -28,7 +28,7 @@ input (s_Enter_Continue);
 close;
 
 # Análise da matriz U
-clc
+clc;
 disp (s_LU_First_Mat_Display);
 disp (" ");
 disp (" ");
@@ -38,26 +38,26 @@ input (s_Enter_Continue);
 close;
 
 # Análise da matriz A
-clc
+clc;
 disp (s_LU_First_Mat_Display);
 disp (s_LU_First_A);
 spy (A);
 input (s_Enter_Continue);
 close;
 
-# FIXME: Fazer isso aqui funcionar grr
-# Matriz nx1 joga um erro de "nonconformant arguments" para o operador '/'!!
-# Provavelmente isso deveria ser ones (n, 1) mesmo, mas conceitualmente
-# tem algum erro aqui. Seguindo a especificação teríamos n = rows (a),
-# e b sendo derivado desse valor, mas mesmo assim continua errado.
-# n = rows (A)
-# b = A * ones (n, 1);
-# x = A/b
-# disp (s_Solution_Found);
-# disp (" ");
-# input (s_Enter_Continue);
+# Análise de Ax = b
 clc;
+n = rows (A);
+b = A * ones (n, 1);
+disp (s_LU_Solution_Found);
+x = A\b
+disp (s_LU_Max_Res_Norm_Found);
+q = norm((b-A*x)/b, inf)
+disp (" ");
+input (s_Enter_Continue);
+
 # Análise do condicionamento
+clc;
 disp (s_LU_Calc_Cond);
 c = cond (A);
 clc;
@@ -78,7 +78,7 @@ A = Problem.A;
 [L, U, P] = lu (A);
 
 # Análise da matriz L
-clc
+clc;
 disp (s_LU_Second_Mat_Display);
 disp (" ");
 disp (" ");
@@ -105,18 +105,18 @@ spy (A);
 input (s_Enter_Continue);
 close;
 
-# FIXME: Fazer isso aqui funcionar grr
-# Matriz nx1 joga um erro de "nonconformant arguments" para o operador '/'!!
-# Provavelmente isso deveria ser ones (n, 1) mesmo, mas conceitualmente
-# tem algum erro aqui. Seguindo a especificação teríamos n = rows (a),
-# e b sendo derivado desse valor, mas mesmo assim continua errado.
-# n = rows (A)
-# b = A * ones (n, 1);
-# x = A/b
-# disp (s_Solution_Found);
-# disp (" ");
-# input (s_Enter_Continue);
+# Análise de Ax = b
 clc;
+n = rows (A);
+b = A * ones (n, 1);
+disp (s_LU_Solution_Found);
+x = A\b
+disp (s_LU_Max_Res_Norm_Found);
+q = norm((b-A*x)/b, inf)
+disp (" ");
+input (s_Enter_Continue);
+clc;
+
 # Análise do condicionamento
 disp (s_LU_Calc_Cond);
 c = cond (A);
@@ -128,6 +128,7 @@ disp (s_LU_High_Cond);
 disp (" ");
 input (s_Enter_Continue);
 
+
 ##############################################################################
 # Terceira matriz
 ##############################################################################
@@ -137,7 +138,7 @@ A = Problem.A;
 [L, U, P] = lu (A);
 
 # Análise da matriz L
-clc
+clc;
 disp (s_LU_Third_Mat_Display);
 disp (" ");
 disp (" ");
@@ -164,18 +165,18 @@ spy (A);
 input (s_Enter_Continue);
 close;
 
-# FIXME: Fazer isso aqui funcionar grr
-# Matriz nx1 joga um erro de "nonconformant arguments" para o operador '/'!!
-# Provavelmente isso deveria ser ones (n, 1) mesmo, mas conceitualmente
-# tem algum erro aqui. Seguindo a especificação teríamos n = rows (a),
-# e b sendo derivado desse valor, mas mesmo assim continua errado.
-# n = rows (A)
-# b = A * ones (n, 1);
-# x = A/b
-# disp (s_Solution_Found);
-# disp (" ");
-# input (s_Enter_Continue);
+# Análise de Ax = b
 clc;
+n = rows (A);
+b = A * ones (n, 1);
+disp (s_LU_Solution_Found);
+x = A\b
+disp (s_LU_Max_Res_Norm_Found);
+q = norm((b-A*x)/b, inf)
+disp (" ");
+input (s_Enter_Continue);
+clc;
+
 # Análise do condicionamento
 disp (s_LU_Calc_Cond);
 c = cond (A);

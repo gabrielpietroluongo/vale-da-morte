@@ -94,7 +94,9 @@ A distribuição dos elementos de A segue a equação PA = LU.";
 
 # Genéricos
 
-s_Solution_Found = "A solução encontrada para o sistema foi:";
+s_LU_Solution_Found = "A solução encontrada para o sistema foi:";
+
+s_LU_Max_Res_Norm_Found = "A norma relativa máxima do resíduo calculado foi:"
 
 s_LU_Cond_Display = "O valor de condicionamento calculado foi:";
 
