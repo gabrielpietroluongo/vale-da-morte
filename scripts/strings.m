@@ -17,6 +17,8 @@ s_Separator_100 = "-------------------------------------------------------------
 #
 ##############################################################################
 
+# Questão 1
+
 s_Intro_Direct = "Primeira parte do trabalho - Análise de métodos diretos.";
 
 s_LU_Exp = "A primeira parte do trabalho consiste na análise de métodos \
@@ -96,7 +98,7 @@ A distribuição dos elementos de A segue a equação PA = LU.";
 
 s_LU_Solution_Found = "A solução encontrada para o sistema foi:";
 
-s_LU_Max_Res_Norm_Found = "A norma relativa máxima do resíduo calculado foi:"
+s_LU_Max_Res_Norm_Found = "A norma relativa máxima do resíduo calculado foi:";
 
 s_LU_Cond_Display = "O valor de condicionamento calculado foi:";
 
@@ -107,3 +109,23 @@ s_LU_Low_Cond = "O valor de condicionamento encontrado para a matriz foi \
 relativamente baixo, o que indica que o sistema está bem condicionado."; 
 
 s_LU_Calc_Cond = "Calculando condicionamento...";
+
+# Questão 2
+
+s_Sol_Introd = "Segunda questão - Objetivo: Observar o comportamento dos \
+métodos iterativos estudados. Analisar as matrizes utilizando a função \
+fatora, escolhendo o ω ideal. Calcular a solução pelos métodos de Jacobi, \
+Gauss-Seidel e SOR com o valor de ω calculado. Desenhar o gráfico da norma \
+do máximo do resíduo com relação às iterações. Comentar conclusões.";
+
+s_Sol_Analysis_M = "Análise da matriz %d: %s\n\n";
+
+s_Sol_Jacobi = "Solução da Matriz %s pelo método de Jacobi:";
+s_Sol_GSeidel = "Solução da Matriz %s pelo método de Gauss-Seidel:";
+s_Sol_SOR = "Solução da Matriz %s pelo método SOR:";
+
+s_Sol_Analysis_W = "Maior lambda para ω = %d: %f\n";
+
+s_Sol_Lambda_Min_Exp = "Sabemos pelo teorema do raio espectral que quanto \
+menor o maior autovalor da matriz for, mais rápido ela irá convergir. \
+Portanto, temos que o valor ideal de ω é %d.\n";
