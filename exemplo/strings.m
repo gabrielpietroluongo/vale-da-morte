@@ -33,9 +33,15 @@ matriz original A por meio do produto dos determinantes das matrizes L e U, \
 o que é computacionalmente trivial dado que os determinantes de L e U são os \
 produtos de suas respectivas diagonais principais.";
 
+s_LU_First_Mat_FName = "fs_183_3.mat";
+
+s_LU_Second_Mat_FName = "orsirr_1.mat";
+
+s_LU_Third_Mat_FName = "bcsstk01.mat";
+
 # Primeira Matriz
 
-s_LU_First_Mat_Display = "Primeira matriz: fs_183_3.mat";
+s_LU_First_Mat_Display = strcat("Primeira matriz: ", s_LU_First_Mat_FName);
 
 s_LU_First_L = "A janela aberta é o gráfico de esparsidade da matriz L.\n\n\
 Analisando o gráfico, é possível constatar a principal característica da \
@@ -55,7 +61,7 @@ abaixo da diagonal principal.";
 
 # Segunda matriz
 
-s_LU_Second_Mat_Display = "Segunda matriz: orsirr_1.mat";
+s_LU_Second_Mat_Display = strcat("Segunda matriz: ", s_LU_Second_Mat_FName);
 
 s_LU_Second_L = "A janela aberta é o gráfico de esparsidade da matriz L.\n\n\
 Assim como na primeira matriz, é possível observar o comportamento \
@@ -72,7 +78,7 @@ original A por meio desse gráfico.";
 
 # Terceira matriz
 
-s_LU_Third_Mat_Display = "Terceira matriz: bcsstk01.mat";
+s_LU_Third_Mat_Display = strcat("Terceira matriz: ", s_LU_Third_Mat_FName);
 
 s_LU_Third_L = "A janela aberta é o gráfico de esparsidade da matriz L.\n\n\
 Como nas matrizes anteriores, o comportamento padrão da matriz L é \

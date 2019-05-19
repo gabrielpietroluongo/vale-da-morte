@@ -13,7 +13,7 @@ input (s_Enter_Continue);
 # Primeira matriz
 ##############################################################################
 clear -except strings
-load ("../dados/fs_183_3.mat");
+load (strcat("../dados/", s_LU_First_Mat_FName));
 A = Problem.A;
 [L, U, P] = lu (A);
 
@@ -73,7 +73,7 @@ input (s_Enter_Continue);
 # Segunda matriz
 ##############################################################################
 clear -except strings
-load ("../dados/orsirr_1.mat");
+load (strcat("../dados/", s_LU_Second_Mat_FName));
 A = Problem.A;
 [L, U, P] = lu (A);
 
@@ -132,7 +132,7 @@ input (s_Enter_Continue);
 # Terceira matriz
 ##############################################################################
 clear -except strings
-load ("../dados/bcsstk01.mat");
+load (strcat("../dados/", s_LU_Third_Mat_FName));
 A = Problem.A;
 [L, U, P] = lu (A);
 
