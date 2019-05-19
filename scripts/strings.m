@@ -11,6 +11,8 @@ s_Enter_Continue = "Pressione Enter para continuar";
 
 s_Separator_100 = "----------------------------------------------------------------------------------------------------";
 
+s_Calculating = "Calculando...";
+
 ##############################################################################
 #
 # Primeira Parte - Métodos Diretos
@@ -129,3 +131,7 @@ s_Sol_Analysis_W = "Maior lambda para ω = %d: %f\n";
 s_Sol_Lambda_Min_Exp = "Sabemos pelo teorema do raio espectral que quanto \
 menor o maior autovalor da matriz for, mais rápido ela irá convergir. \
 Portanto, temos que o valor ideal de ω é %d.\n";
+
+s_Sol_Lambda_SOR_1 = "Como observamos que ω = 1 é o valor ideal para o \
+método SOR, temos que a aplicação do método SOR nesse caso será idêntica \
+à aplicação do método Gauss-Seidel.";
