@@ -12,5 +12,11 @@ introd
 # Parte I - Sistemas Lineares
 # -----------------------------------------------------------
 p1
+disp('Fim da questão 1');
 disp(' ');
-disp('Tecle alguma coisa para continuar...'); pause
+input('Tecle alguma coisa para continuar...');
+
+p2
+disp('Fim da questão 2');
+disp(' ');
+input('Tecle alguma coisa para continuar...');
