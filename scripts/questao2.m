@@ -41,13 +41,13 @@ disp(" ");
 input (s_Enter_Continue);
 clc
 
-#{
+
 # Soluções
 n = rows(A);
 b = A * ones (n, 1);
 clc
 printf (s_Sol_Jacobi, s_Lin_First_Mat_FName);
-j = jacobi (A, b, tol, maxIter)
+[xJacobi, iterJacobi, resJacobi] = jacobi (A, b, tol, maxIter)
 disp(" ");
 
 input (s_Enter_Continue);
@@ -55,8 +55,12 @@ clc;
 
 printf(s_Sol_GSeidel, s_Lin_First_Mat_FName);
 # Gauss-Seidel = SOR com w = 1
-gseidel = sor (A, b, tol, maxIter, 1) 
+[xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
 disp (" ");
+
+xi = linspace(1, iterJacobi, iterJacobi)
+x2 = linspace(1, iterSeidel, iterSeidel)
+plot(xi, resJacobi, ";Jacobi;", x2, resSeidel, ";Seidel;")
 
 input (s_Enter_Continue);
 clc;
@@ -67,7 +71,9 @@ disp (" ");
 
 input (s_Enter_Continue);
 clc;
-#}
+
+
+
 
 clear -except strings
 
