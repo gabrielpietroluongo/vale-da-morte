@@ -7,6 +7,9 @@ strings
 # Mostra a descrição do trabalho
 introd
 
+# Carrega os scripts utilitários
+addpath ./utils
+
 
 # -----------------------------------------------------------
 # Parte I - Sistemas Lineares

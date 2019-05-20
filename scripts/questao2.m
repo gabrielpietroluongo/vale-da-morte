@@ -1,6 +1,5 @@
 clc
 clear -except strings
-addpath ./utils
 
 disp (s_Sol_Introd);
 disp (" ");
