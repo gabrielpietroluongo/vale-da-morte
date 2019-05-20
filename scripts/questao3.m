@@ -37,6 +37,6 @@ z3 = polyval(p3, xi);
 
 plot(x, y, "*", xi, z3, "; Polinômio aproximante de Grau 3;")
 
-fprintf("\n\nSeguindo p3(x), temos p(2.8) = %f\n\n",  (33.01*(2.8)^3)-(259.86*(2.8)^2) + 675.15*2.8 - 571.83);
+fprintf("\n\nSeguindo p3(x), temos p(2.8) = %f\n\n",  polyval(p3, 2.8));
 
 input(s_Enter_Continue);
