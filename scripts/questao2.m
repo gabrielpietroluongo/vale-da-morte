@@ -57,22 +57,20 @@ printf(s_Sol_GSeidel, s_Lin_First_Mat_FName);
 # Gauss-Seidel = SOR com w = 1
 [xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
 disp (" ");
-
-xi = linspace(1, iterJacobi, iterJacobi)
-x2 = linspace(1, iterSeidel, iterSeidel)
-plot(xi, resJacobi, ";Jacobi;", x2, resSeidel, ";Seidel;")
-
 input (s_Enter_Continue);
 clc;
 
 printf(s_Sol_SOR, s_Lin_First_Mat_FName);
-s = sor (A, b, tol, maxIter, 1)
+[xSor, iterSor, resSor] = sor (A, b, tol, maxIter, 1)
 disp (" ");
 
 input (s_Enter_Continue);
 clc;
 
-
+xj = linspace(1, iterJacobi, iterJacobi)
+xg = linspace(1, iterSeidel, iterSeidel)
+xs = linspace(1, iterSor, iterSor)
+plot(xj, resJacobi, ";Jacobi;", xg, resSeidel, ";Seidel;", xs, resSor, ";SOR;")
 
 
 clear -except strings
