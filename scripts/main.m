@@ -14,17 +14,17 @@ addpath ./utils
 # -----------------------------------------------------------
 # Parte I - Sistemas Lineares
 # -----------------------------------------------------------
-p1
+questao1
 disp('Fim da questão 1');
 disp(' ');
 input('Tecle alguma coisa para continuar...');
 
-p2
+questao2
 disp('Fim da questão 2');
 disp(' ');
 input('Tecle alguma coisa para continuar...');
 
-p3
+questao3
 disp('Fim da questão 3');
 disp(' ');
 input('Tecle alguma coisa para continuar...');
