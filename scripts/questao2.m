@@ -33,6 +33,7 @@ disp(" ");
 printf(s_Sol_Analysis_W, 0, max(abs(diag(lambda))))
 disp(" ");
 
+# Conclusões sobre a fatora
 printf (s_Sol_Lambda_Min_Exp, 1)
 disp (" ");
 disp (s_Sol_Lambda_SOR_1);
@@ -54,7 +55,7 @@ input (s_Enter_Continue);
 clc;
 
 printf(s_Sol_GSeidel, s_Lin_First_Mat_FName);
-# Gauss-Seidel = SOR com w = 1
+# Gauss-Seidel -> SOR com w = 1
 [xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
 disp (" ");
 input (s_Enter_Continue);
@@ -67,12 +68,16 @@ disp (" ");
 input (s_Enter_Continue);
 clc;
 
-xj = linspace(1, iterJacobi, iterJacobi)
-xg = linspace(1, iterSeidel, iterSeidel)
-xs = linspace(1, iterSor, iterSor)
+# Desenho do gráfico
+
+xj = linspace(1, iterJacobi, iterJacobi);
+xg = linspace(1, iterSeidel, iterSeidel);
+xs = linspace(1, iterSor, iterSor);
 plot(xj, resJacobi, ";Jacobi;", xg, resSeidel, ";Seidel;", xs, resSor, ";SOR;")
 
-
+disp(' ')
+input(s_Enter_Continue);
+close;
 clear -except strings
 
 ##############################################################################
