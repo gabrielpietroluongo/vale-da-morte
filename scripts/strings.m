@@ -7,6 +7,10 @@
     está no arquivo introd.m.
 #}
 
+cache_path = "../cache/";
+data_path = "../dados/";
+
+
 s_Enter_Continue = "Pressione Enter para continuar";
 
 s_Separator_100 = "----------------------------------------------------------------------------------------------------";

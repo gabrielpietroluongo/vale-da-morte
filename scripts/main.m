@@ -10,6 +10,9 @@ introd
 # Carrega os scripts utilitários
 addpath ./utils
 
+# Confirmação do uso de dados em cache
+input_ShouldCache = input("Deseja usar os dados em cache? (S/N)", "s");
+bShouldUseCache = (input_ShouldCache == "S" || input_ShouldCache == "s");
 
 # -----------------------------------------------------------
 # Parte I - Sistemas Lineares
