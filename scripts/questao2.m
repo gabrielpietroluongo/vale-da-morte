@@ -58,11 +58,11 @@ disp(' ');
 if(bShouldUseCache != 1)
     [xJacobi, iterJacobi, resJacobi] = jacobi (A, b, tol, maxIter)
 else
-    load "../cache/xJacobi_fs_183_3.cache"
+    load "../cache/fs_183_3/xJacobi_fs_183_3.cache"
     xJacobi
-    load "../cache/iterJacobi_fs_183_3.cache"
+    load "../cache/fs_183_3/iterJacobi_fs_183_3.cache"
     iterJacobi
-    load "../cache/resJacobi_fs_183_3.cache"
+    load "../cache/fs_183_3/resJacobi_fs_183_3.cache"
     resJacobi
 endif;
 disp(" ");
@@ -75,11 +75,11 @@ if(bShouldUseCache != 1)
     # Gauss-Seidel -> SOR com w = 1
     [xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
 else
-    load "../cache/xSeidel_fs_183_3.cache"
+    load "../cache/fs_183_3/xSeidel_fs_183_3.cache"
     xSeidel
-    load "../cache/iterSeidel_fs_183_3.cache"
+    load "../cache/fs_183_3/iterSeidel_fs_183_3.cache"
     iterSeidel
-    load "../cache/resSeidel_fs_183_3.cache"
+    load "../cache/fs_183_3/resSeidel_fs_183_3.cache"
     resSeidel
 endif;
 disp (" ");
@@ -90,11 +90,11 @@ printf(s_Sol_SOR, s_Lin_First_Mat_FName);
 if(bShouldUseCache != 1)
     [xSor, iterSor, resSor] = sor (A, b, tol, maxIter, 1)
 else
-    load "../cache/xSor_fs_183_3.cache"
+    load "../cache/fs_183_3/xSor_fs_183_3.cache"
     xSor
-    load "../cache/iterSor_fs_183_3.cache"
+    load "../cache/fs_183_3/iterSor_fs_183_3.cache"
     iterSor
-    load "../cache/resSor_fs_183_3.cache"
+    load "../cache/fs_183_3/resSor_fs_183_3.cache"
     resSor
 endif;
 disp (" ");
