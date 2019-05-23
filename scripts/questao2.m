@@ -14,7 +14,7 @@ maxIter = 10000;
 
 printf(s_Sol_Analysis_M, 1, s_Lin_First_Mat_FName);
 
-load (strcat("../dados/", s_Lin_First_Mat_FName));
+load (strcat(data_path, s_Lin_First_Mat_FName));
 A = Problem.A;
 
 # Análise do Fatora
@@ -88,7 +88,7 @@ maxIter = 10000;
 
 printf(s_Sol_Analysis_M, 2, s_Lin_Second_Mat_FName);
 
-load (strcat("../dados/", s_Lin_Second_Mat_FName));
+load (strcat(data_path, s_Lin_Second_Mat_FName));
 A = Problem.A;
 
 # Análise do Fatora
@@ -106,6 +106,7 @@ disp(" ");
 [V lambda] = eig(SOR);
 printf(s_Sol_Analysis_W, 0, max(abs(diag(lambda))))
 disp(" ");
+
 
 printf (s_Sol_Lambda_Min_Exp, 1)
 disp (" ");
@@ -154,7 +155,7 @@ maxIter = 10000;
 
 printf(s_Sol_Analysis_M, 3, s_Lin_Third_Mat_FName);
 
-load (strcat("../dados/", s_Lin_Third_Mat_FName));
+load (strcat(data_path, s_Lin_Third_Mat_FName));
 A = Problem.A;
 
 # Análise do Fatora

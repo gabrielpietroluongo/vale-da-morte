@@ -1,7 +1,7 @@
 clc
 clear -except strings
 
-load "../dados/ajuste_bacteria.txt";
+load (strcat(data_path, s_Adjust_Bacteria_FName));
 [l, c] = size(ajuste_bacteria);
 # Linearizando como 1/v = Ks/Vm * 1/s + 1/Vm
 # temos a = Ks/Vm, x = 1/s, b = 1/Vm
