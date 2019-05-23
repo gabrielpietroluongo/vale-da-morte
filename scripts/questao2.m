@@ -13,12 +13,16 @@ tol = 0.00001;
 maxIter = 10000;
 
 printf(s_Sol_Analysis_M, 1, s_Lin_First_Mat_FName);
-
 load (strcat(data_path, s_Lin_First_Mat_FName));
 A = Problem.A;
 
 # Análise do Fatora
 [MJ, MS, SOR] = fatora(A, 2);
+[V lambda] = eig(MJ);
+printf("Maior lambda para a matriz de Jacobi: %f\n\n", max(abs(diag(lambda))))
+[V lambda] = eig(MS);
+printf("Maior lambda para a matriz de Gauss-Seidel: %f\n\n", max(abs(diag(lambda))))
+
 [V lambda] = eig(SOR);
 printf(s_Sol_Analysis_W, 2, max(abs(diag(lambda))))
 disp(" ");
@@ -34,6 +38,7 @@ printf(s_Sol_Analysis_W, 0, max(abs(diag(lambda))))
 disp(" ");
 
 # Conclusões sobre a fatora
+# FIXME: Comentários faltando
 printf (s_Sol_Lambda_Min_Exp, 1)
 disp (" ");
 disp (s_Sol_Lambda_SOR_1);

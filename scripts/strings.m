@@ -130,7 +130,7 @@ s_Sol_Jacobi = "Solução da Matriz %s pelo método de Jacobi:";
 s_Sol_GSeidel = "Solução da Matriz %s pelo método de Gauss-Seidel:";
 s_Sol_SOR = "Solução da Matriz %s pelo método SOR:";
 
-s_Sol_Analysis_W = "Maior lambda para ω = %d: %f\n";
+s_Sol_Analysis_W = "Maior lambda (SOR) para ω = %d: %f\n";
 
 s_Sol_Lambda_Min_Exp = "Sabemos pelo teorema do raio espectral que quanto \
 menor o maior autovalor da matriz for, mais rápido ela irá convergir. \
