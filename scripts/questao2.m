@@ -117,16 +117,19 @@ clear -except strings
 ##############################################################################
 # Segunda matriz
 ##############################################################################
-tol = 0.00001;
-maxIter = 10000;
 
-printf(s_Sol_Analysis_M, 2, s_Lin_Second_Mat_FName);
+printf(s_Sol_Analysis_M, 2, "bcsstk01");
 
-load (strcat(data_path, s_Lin_Second_Mat_FName));
+load (strcat(data_path, "bcsstk01.mat"));
 A = Problem.A;
 
 # Análise do Fatora
 [MJ, MS, SOR] = fatora(A, 2);
+[V lambda] = eig(MJ);
+printf("Maior lambda para a matriz de Jacobi: %f\n\n", max(abs(diag(lambda))))
+[V lambda] = eig(MS);
+printf("Maior lambda para a matriz de Gauss-Seidel: %f\n\n", max(abs(diag(lambda))))
+
 [V lambda] = eig(SOR);
 printf(s_Sol_Analysis_W, 2, max(abs(diag(lambda))))
 disp(" ");
@@ -141,7 +144,8 @@ disp(" ");
 printf(s_Sol_Analysis_W, 0, max(abs(diag(lambda))))
 disp(" ");
 
-
+# Conclusões sobre a fatora
+# FIXME: Comentários faltando
 printf (s_Sol_Lambda_Min_Exp, 1)
 disp (" ");
 disp (s_Sol_Lambda_SOR_1);
@@ -150,50 +154,68 @@ disp(" ");
 input (s_Enter_Continue);
 clc
 
-#{
-
 # Soluções
 n = rows(A);
 b = A * ones (n, 1);
 clc
-printf (s_Sol_Jacobi, s_Lin_First_Mat_FName);
-j = jacobi (A, b, tol, maxIter)
-disp(" ");
 
-input (s_Enter_Continue);
-clc;
-
-printf(s_Sol_GSeidel, s_Lin_First_Mat_FName);
-# Gauss-Seidel = SOR com w = 1
-gseidel = sor (A, b, tol, maxIter, 1) 
+printf(s_Sol_GSeidel, "bcsstk01");
+if(bShouldUseCache != 1)
+    # Gauss-Seidel -> SOR com w = 1
+    [xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
+else
+    load "../cache/bcsstk01/xSeidel_bcsstk01.cache"
+    xSeidel
+    load "../cache/bcsstk01/iterSeidel_bcsstk01.cache"
+    iterSeidel
+    load "../cache/bcsstk01/resSeidel_bcsstk01.cache"
+    resSeidel
+endif;
 disp (" ");
-
 input (s_Enter_Continue);
 clc;
 
 printf(s_Sol_SOR, s_Lin_First_Mat_FName);
-s = sor (A, b, tol, maxIter, 1)
-disp (" ");
+if(bShouldUseCache != 1)
+    [xSor, iterSor, resSor] = sor (A, b, tol, maxIter, 1)
+else
+    load "../cache/bcsstk01/xSor_bcsstk01.cache"
+    xSor
+    load "../cache/bcsstk01/iterSor_bcsstk01.cache"
+    iterSor
+    load "../cache/bcsstk01/resSor_bcsstk01.cache"
+    resSor
+endif;
 
-input (s_Enter_Continue);
-clc;
-#}
+# Desenho do gráfico
+
+xg = linspace(1, iterSeidel, iterSeidel);
+xs = linspace(1, iterSor, iterSor);
+plot(xg, resSeidel, ";Seidel;", xs, resSor, ";SOR;")
+
+disp(' ')
+input(s_Enter_Continue);
+close;
 
 clear -except strings
+clc;
 
 ##############################################################################
 # Terceira matriz
 ##############################################################################
-tol = 0.00001;
-maxIter = 10000;
 
-printf(s_Sol_Analysis_M, 3, s_Lin_Third_Mat_FName);
+printf(s_Sol_Analysis_M, 3, "plat362");
 
-load (strcat(data_path, s_Lin_Third_Mat_FName));
+load (strcat(data_path, "plat362.mat"));
 A = Problem.A;
 
 # Análise do Fatora
 [MJ, MS, SOR] = fatora(A, 2);
+[V lambda] = eig(MJ);
+printf("Maior lambda para a matriz de Jacobi: %f\n\n", max(abs(diag(lambda))))
+[V lambda] = eig(MS);
+printf("Maior lambda para a matriz de Gauss-Seidel: %f\n\n", max(abs(diag(lambda))))
+
 [V lambda] = eig(SOR);
 printf(s_Sol_Analysis_W, 2, max(abs(diag(lambda))))
 disp(" ");
@@ -208,6 +230,8 @@ disp(" ");
 printf(s_Sol_Analysis_W, 0, max(abs(diag(lambda))))
 disp(" ");
 
+# Conclusões sobre a fatora
+# FIXME: Comentários faltando
 printf (s_Sol_Lambda_Min_Exp, 1)
 disp (" ");
 disp (s_Sol_Lambda_SOR_1);
@@ -215,34 +239,5 @@ disp(" ");
 
 input (s_Enter_Continue);
 clc
-
-#{
-
-# Soluções
-n = rows(A);
-b = A * ones (n, 1);
-clc
-printf (s_Sol_Jacobi, s_Lin_First_Mat_FName);
-j = jacobi (A, b, tol, maxIter)
-disp(" ");
-
-input (s_Enter_Continue);
-clc;
-
-printf(s_Sol_GSeidel, s_Lin_First_Mat_FName);
-# Gauss-Seidel = SOR com w = 1
-gseidel = sor (A, b, tol, maxIter, 1) 
-disp (" ");
-
-input (s_Enter_Continue);
-clc;
-
-printf(s_Sol_SOR, s_Lin_First_Mat_FName);
-s = sor (A, b, tol, maxIter, 1)
-disp (" ");
-
-input (s_Enter_Continue);
-clc;
-#}
 
 clear -except strings
