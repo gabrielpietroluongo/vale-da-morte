@@ -53,6 +53,10 @@ z3 = polyval(p3, xi);
 
 plot(x, y, "*", xi, z3, "; Polinômio aproximante de Grau 3;")
 
+title("Visualização gráfica do ajuste");
+xlabel("Volume");
+ylabel("Tempo de congelamento");
+
 fprintf("\n\nSeguindo p3(x), temos p(2.8) = %f\n\n",  polyval(p3, 2.8));
 
 input(s_Enter_Continue);

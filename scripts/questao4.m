@@ -79,24 +79,24 @@ disp(s_Graph_Lin_Aprox_Exp);
 linAprox = polyval(lin, xi);
 plot(x, z, "*", xi, linAprox, ";Linearização;")
 
+title("Visualização gráfica do ajuste (Função linearizada)");
+xlabel("Concentração de O²");
+ylabel("Crescimento da bactéria");
+
+
 input (s_Enter_Continue);
 clc;
 close;
 disp(s_Graph_MM_Aprox_Exp);
 plot (xq, yq, ";Caso 1;", xq, yq2, ";Caso 2;", s, v, "*")
 
-[rsq1, vari1] = qualidade_ajuste(s, v, 1, yq)
-[rsq2, vari2] = qualidade_ajuste(s, v, 2, yq2)
+title("Visualização gráfica do ajuste");
+xlabel("Concentração de O²");
+ylabel("Crescimento da bactéria");
 
 disp("\n");
 
-input(s_Enter_Continue);
-close;
-
-polyval(yq2, xq)
-
 printf(s_Est_Tax_7, 0.35156);
-
 disp(' ')
 input(s_Enter_Continue);
-
+close;

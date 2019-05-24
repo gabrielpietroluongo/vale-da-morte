@@ -112,6 +112,10 @@ xg = linspace(1, iterSeidel, iterSeidel);
 xs = linspace(1, iterSor, iterSor);
 plot(xj, resJacobi, ";Jacobi;", xg, resSeidel, ";Seidel;", xs, resSor, ";SOR;")
 
+title("Resíduo da solução em função das iterações");
+xlabel("Iterações");
+ylabel("Resíduo");
+
 disp(s_Res_Graph_Leg);
 
 disp(' ')
@@ -201,6 +205,10 @@ endif;
 xg = linspace(1, iterSeidel, iterSeidel);
 xs = linspace(1, iterSor, iterSor);
 plot(xg, resSeidel, ";Seidel;", xs, resSor, ";SOR;")
+
+title("Resíduo da solução em função das iterações");
+xlabel("Iterações");
+ylabel("Resíduo");
 
 disp(s_Res_Graph_Leg);
 
