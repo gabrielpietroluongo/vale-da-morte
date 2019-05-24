@@ -93,18 +93,19 @@ plot (xq, yq, ";Caso 1;", xq, yq2, ";Caso 2;", s, v, "*")
 title("Visualização gráfica do ajuste");
 xlabel("Concentração de O²");
 ylabel("Crescimento da bactéria");
-
-disp("\n");
-
 # r2s = [coef_determinacao(z,yq), coef_determinacao(s,Vcaso1Origial), coef_determinacao(z,yq2), coef_determinacao(v,Vcaso2Original)]
 
 pred_lin_1 = polyval(lin, x);
 pred_lin_2 = polyval(lin2, x);
 predictions_q1 = (0.40833*s.^2) ./ (7.9188 + s.^2);
 predictions_q2 = ((5.2571 * s)./(86.228 + s));
-r2s = [coef_determinacao(v, predictions_q1), coef_determinacao(v, predictions_q2), coef_determinacao(z, pred_lin_1), coef_determinacao(z, pred_lin_2)]
-
+r2s = [coef_determinacao(v, predictions_q1), coef_determinacao(v, predictions_q2), coef_determinacao(z, pred_lin_1), coef_determinacao(z, pred_lin_2)];
+disp("\nCálculo do r²:");
+printf("Original, caso 1: %f\n", r2s (1));
+printf("Original, caso 2: %f\n", r2s (2));
+printf("Linearizado, caso 1: %f\n", r2s (3));
+printf("Linearizado, caso 2: %f\n\n", r2s (4));
 printf(s_Est_Tax_7, 0.35156);
-disp(' ')
+disp("\n");
 input(s_Enter_Continue);
 close;
