@@ -10,6 +10,18 @@
 cache_path = "../cache/";
 data_path = "../dados/";
 
+s_Disk_Cache_Desc = "Para acelerar o processo de testes e avaliação, um \
+cache em disco foi criado anteriormente com soluções de problemas que \
+levariam mais tempo para serem resolvidos (como a aplicação do método \
+de Jacobi em matrizes grandes). Ao utilizar o cache em disco, alguns dos \
+cálculos não serão feitos localmente, mas sim utilizarão esses dados já \
+armazenados no disco rígido.";
+
+s_Disk_Cache_Ask = "Deseja usar o cache em disco? (S/N)\n";
+
+s_Disk_Cache_Yes = "O cache em disco será utilizado.";
+
+s_Disk_Cache_No = "O cache em disco não será utilizado.";
 
 s_Enter_Continue = "Pressione Enter para continuar";
 

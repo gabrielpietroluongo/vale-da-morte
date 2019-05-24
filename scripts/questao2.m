@@ -1,10 +1,11 @@
 clear -x bShouldUseCache
 strings_all
 strings_q2
+clc;
 disp (s_Introd);
 disp (" ");
 input (s_Enter_Continue);
-clc
+clc;
 
 ##############################################################################
 # Primeira matriz

@@ -6,43 +6,27 @@ addpath strings
 strings_all
 
 # Mostra a descrição do trabalho
-introd
+# introd
 
 # Carrega os scripts utilitários
 addpath ./utils
 
 # Confirmação do uso de dados em cache
-input_ShouldCache = input("Deseja usar os dados em cache? (S/N)", "s");
+disp(s_Disk_Cache_Desc);
+disp("\n");
+input_ShouldCache = input(s_Disk_Cache_Ask, "s");
 bShouldUseCache = (input_ShouldCache == "S" || input_ShouldCache == "s");
 
-# -----------------------------------------------------------
-# Parte I - Sistemas Lineares
-# -----------------------------------------------------------
+disp("\n");
 
-questao1
-clc;
-disp('Fim da questão 1');
-disp(' ');
-input('Tecle alguma coisa para continuar...');
+if(bShouldUseCache)
+    disp(s_Disk_Cache_Yes);
+else
+    disp(s_Disk_Cache_No);
+endif
 
-questao2
-clc;
-disp('Fim da questão 2');
-disp(' ');
-input('Tecle alguma coisa para continuar...');
+disp("\n");
 
-# -----------------------------------------------------------
-# Parte II - Ajuste
-# -----------------------------------------------------------
+input(s_Enter_Continue);
 
-questao3
-clc;
-disp('Fim da questão 3');
-disp(' ');
-input('Tecle alguma coisa para continuar...');
-
-questao4
-clc;
-disp('Fim da questão 4');
-disp(' ');
-input('Tecle alguma coisa para continuar...');
+select_menu
