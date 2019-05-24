@@ -4,8 +4,6 @@ clear
 # Carrega as strings do arquivo de strings
 addpath strings
 
-strings_all
-
 # Mostra a descrição do trabalho
 introd
 
@@ -31,6 +29,10 @@ clc;
 disp('Fim da questão 2');
 disp(' ');
 input('Tecle alguma coisa para continuar...');
+
+# -----------------------------------------------------------
+# Parte II - Ajuste
+# -----------------------------------------------------------
 
 questao3
 clc;
