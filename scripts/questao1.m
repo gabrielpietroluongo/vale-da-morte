@@ -1,4 +1,4 @@
-clear -x bShouldUseCache
+clear -x conf_*
 strings_all
 strings_q1
 clc
@@ -24,6 +24,7 @@ disp (s_LU_First_Mat_Display);
 disp (" ");
 disp (" ");
 disp (s_LU_First_L);
+disp (" ");
 spy (L);
 input (s_Enter_Continue);
 close;
@@ -34,6 +35,7 @@ disp (s_LU_First_Mat_Display);
 disp (" ");
 disp (" ");
 disp (s_LU_First_U);
+disp (" ")
 spy (U);
 input (s_Enter_Continue);
 close;
@@ -43,6 +45,7 @@ clc;
 disp (s_LU_First_Mat_Display);
 disp (s_LU_First_A);
 spy (A);
+disp (" ");
 input (s_Enter_Continue);
 close;
 
@@ -73,6 +76,9 @@ input (s_Enter_Continue);
 ##############################################################################
 # Segunda matriz
 ##############################################################################
+clear -x conf_*
+strings_all
+strings_q1
 load (strcat(data_path, s_Second_Mat));
 A = Problem.A;
 [L, U, P] = lu (A);
@@ -84,6 +90,7 @@ disp (" ");
 disp (" ");
 disp (s_LU_Second_L);
 spy (L);
+disp(" ");
 input (s_Enter_Continue);
 close;
 
@@ -94,6 +101,7 @@ disp (" ");
 disp (" ");
 disp (s_LU_Second_U);
 spy (U);
+disp(" ");
 input (s_Enter_Continue);
 close;
 
@@ -102,6 +110,7 @@ clc;
 disp (s_LU_Second_Mat_Display);
 disp (s_LU_Second_A);
 spy (A);
+disp (" ");
 input (s_Enter_Continue);
 close;
 
@@ -132,7 +141,9 @@ input (s_Enter_Continue);
 ##############################################################################
 # Terceira matriz
 ##############################################################################
-clear -except strings
+clear -x conf_*
+strings_q1
+strings_all
 load (strcat(data_path, s_Third_Mat));
 A = Problem.A;
 [L, U, P] = lu (A);
@@ -144,6 +155,7 @@ disp (" ");
 disp (" ");
 disp (s_LU_Third_L);
 spy (L);
+disp(" ");
 input (s_Enter_Continue);
 close;
 
@@ -154,6 +166,7 @@ disp (" ");
 disp (" ");
 disp (s_LU_Third_U);
 spy (U);
+disp(" ");
 input (s_Enter_Continue);
 close;
 
@@ -162,6 +175,7 @@ clc;
 disp (s_LU_Third_Mat_Display);
 disp (s_LU_Third_A);
 spy (A);
+disp (" ");
 input (s_Enter_Continue);
 close;
 

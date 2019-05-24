@@ -1,4 +1,4 @@
-clear -x bShouldUseCache
+clear -x conf_*
 strings_all
 strings_q2
 clc;
@@ -50,7 +50,7 @@ b = A * ones (n, 1);
 clc;
 printf (s_Sol_Jacobi, s_First_Mat);
 
-if(bShouldUseCache != 1)
+if(conf_ShouldUseCache != 1)
     [xJacobi, iterJacobi, resJacobi] = jacobi (A, b, tol, maxIter)
 else
     load (strcat(cache_path, s_First_Mat, "/xJacobi_", s_First_Mat, ".cache"));
@@ -69,7 +69,7 @@ input (s_Enter_Continue);
 clc;
 
 printf(s_Sol_GSeidel, s_First_Mat);
-if(bShouldUseCache != 1)
+if(conf_ShouldUseCache != 1)
     # Gauss-Seidel -> SOR com w = 1
     [xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
 else
@@ -88,7 +88,7 @@ input (s_Enter_Continue);
 clc;
 
 printf(s_Sol_SOR, s_First_Mat);
-if(bShouldUseCache != 1)
+if(conf_ShouldUseCache != 1)
     [xSor, iterSor, resSor] = sor (A, b, tol, maxIter, 1)
 else
     load (strcat(cache_path, s_First_Mat, "/xSor_", s_First_Mat, ".cache"));
@@ -127,7 +127,7 @@ close;
 # Segunda matriz
 ##############################################################################
 clc;
-clear -x bShouldUseCache
+clear -x conf_*
 strings_all
 strings_q2
 printf(s_Analysis_M, 2, s_Second_Mat);
@@ -168,7 +168,7 @@ b = A * ones (n, 1);
 clc
 
 printf(s_Sol_GSeidel, s_Second_Mat);
-if(bShouldUseCache != 1)
+if(conf_ShouldUseCache != 1)
     # Gauss-Seidel -> SOR com w = 1
     [xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
 else
@@ -187,7 +187,7 @@ input (s_Enter_Continue);
 clc;
 
 printf(s_Sol_SOR, s_Second_Mat);
-if(bShouldUseCache != 1)
+if(conf_ShouldUseCache != 1)
     [xSor, iterSor, resSor] = sor (A, b, tol, maxIter, 1)
 else
     load (strcat(cache_path, s_Second_Mat, "/xSor_", s_Second_Mat, ".cache"));
@@ -221,7 +221,7 @@ close;
 ##############################################################################
 # Terceira matriz
 ##############################################################################
-clear -x bShouldUseCache
+clear -x conf_*
 strings_all
 strings_q2
 clc;

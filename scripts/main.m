@@ -15,11 +15,11 @@ addpath ./utils
 disp(s_Disk_Cache_Desc);
 disp("\n");
 input_ShouldCache = input(s_Disk_Cache_Ask, "s");
-bShouldUseCache = (input_ShouldCache == "S" || input_ShouldCache == "s");
+conf_ShouldUseCache = (input_ShouldCache == "S" || input_ShouldCache == "s");
 
 disp("\n");
 
-if(bShouldUseCache)
+if(conf_ShouldUseCache)
     disp(s_Disk_Cache_Yes);
 else
     disp(s_Disk_Cache_No);
@@ -30,7 +30,7 @@ disp("\n");
 input(s_Enter_Continue);
 
 # Desativa o menu gráfico por padrão
-bUseGraphicMenu = false;
+conf_UseGraphicMenu = false;
 
 # Chama o menu principal
 select_menu;

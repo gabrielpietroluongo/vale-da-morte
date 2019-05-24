@@ -1,5 +1,5 @@
 clc
-clear -x bShouldUseCache
+clear -x conf_*
 strings_all
 strings_q3
 

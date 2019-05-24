@@ -2,13 +2,13 @@
 while(1)
     clc;
     disp(s_Header);
-    if(bShouldUseCache)
+    if(conf_ShouldUseCache)
         disp("Usando cache em disco");
     else
         disp("Não usando cache em disco")
     endif;
     disp("\n");
-    if(!bUseGraphicMenu)
+    if(!conf_UseGraphicMenu)
         q = input(s_MainMenu_Text);
     else
         q = menu("Menu Principal do Trabalho",
@@ -33,9 +33,9 @@ while(1)
         case 5
             questao4;
         case 6
-            bShouldUseCache = !bShouldUseCache;
+            conf_ShouldUseCache = !conf_ShouldUseCache;
         case 7
-            bUseGraphicMenu = !bUseGraphicMenu;
+            conf_UseGraphicMenu = !conf_UseGraphicMenu;
         case 8
             break;
         otherwise
