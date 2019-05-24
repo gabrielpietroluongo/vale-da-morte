@@ -29,4 +29,8 @@ disp("\n");
 
 input(s_Enter_Continue);
 
-select_menu
+# Desativa o menu gráfico por padrão
+bUseGraphicMenu = false;
+
+# Chama o menu principal
+select_menu;

@@ -2,7 +2,7 @@ s_Adjust_Freeze_FName = "ajuste_congelamento.txt";
 
 s_Intro_Adj = "Segunda Parte do Trabalho - Ajuste de Curvas"
 
-s_Adjust_Exp = "A segunda parte do trabalho consiste na aplicação de 
+s_Adjust_Exp = "A segunda parte do trabalho consiste na aplicação de \
 regressões polinomiais não-lineares utilizando o método dos quadrados \
 mínimos para encontrar uma função que melhor se adeque a um determinado \
 conjunto de dados experimentais. No primeiro exercício, sendo \

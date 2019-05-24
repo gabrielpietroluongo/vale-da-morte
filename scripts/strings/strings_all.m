@@ -31,4 +31,10 @@ s_Calculating = "Calculando...";
 
 s_Header = "--------------------------------------------------\nPrimeiro \
 trabalho de Algoritmos Numéricos\nProfª Andrea Valli\nDesenvolvido por \
-Gabriel Pietroluongo\n--------------------------------------------------\n";  
+Gabriel Pietroluongo\n--------------------------------------------------\n";
+
+s_MainMenu_Text = "Menu Principal do Trabalho\n[1] Apresentação Completa\n\
+[2] Primeira Questão (Métodos Diretos)\n[3] Segunda Questão (Métodos \
+Iterativos)\n[4] Terceira Questão (Ajuste Volume em função do tempo)\n[5] \
+Quarta Questão (Ajuste Michaelis-Menten)\n[6] Alternar uso de cache em \
+disco\n[7] Alternar uso de menu gráfico\n[8] Sair\n";
