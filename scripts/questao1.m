@@ -1,5 +1,4 @@
 clc
-clear -except strings
 disp (s_Separator_100);
 disp (s_Intro_Direct);
 disp (s_Separator_100);
@@ -12,8 +11,7 @@ input (s_Enter_Continue);
 ##############################################################################
 # Primeira matriz
 ##############################################################################
-clear -except strings
-load (strcat("../dados/", s_Lin_First_Mat_FName));
+load (strcat(data_path, s_First_Mat, ".mat"));
 A = Problem.A;
 [L, U, P] = lu (A);
 
@@ -72,8 +70,7 @@ input (s_Enter_Continue);
 ##############################################################################
 # Segunda matriz
 ##############################################################################
-clear -except strings
-load (strcat("../dados/", s_Lin_Second_Mat_FName));
+load (strcat(data_path, s_Second_Mat));
 A = Problem.A;
 [L, U, P] = lu (A);
 
@@ -133,7 +130,7 @@ input (s_Enter_Continue);
 # Terceira matriz
 ##############################################################################
 clear -except strings
-load (strcat("../dados/", s_Lin_Third_Mat_FName));
+load (strcat(data_path, s_Third_Mat));
 A = Problem.A;
 [L, U, P] = lu (A);
 

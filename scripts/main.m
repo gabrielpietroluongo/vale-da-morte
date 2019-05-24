@@ -2,7 +2,9 @@ clc
 clear
 
 # Carrega as strings do arquivo de strings
-strings
+addpath strings
+
+strings_all
 
 # Mostra a descrição do trabalho
 introd
@@ -17,24 +19,37 @@ bShouldUseCache = (input_ShouldCache == "S" || input_ShouldCache == "s");
 # -----------------------------------------------------------
 # Parte I - Sistemas Lineares
 # -----------------------------------------------------------
+
+clear -x bShouldUseCache
+strings_all
+strings_q1
 questao1
 clc;
 disp('Fim da questão 1');
 disp(' ');
 input('Tecle alguma coisa para continuar...');
 
+clear -x bShouldUseCache
+strings_all
+strings_q2
 questao2
 clc;
 disp('Fim da questão 2');
 disp(' ');
 input('Tecle alguma coisa para continuar...');
 
+clear -x bShouldUseCache
+strings_all
+strings_q3
 questao3
 clc;
 disp('Fim da questão 3');
 disp(' ');
 input('Tecle alguma coisa para continuar...');
 
+clear -x bShouldUseCache
+strings_all
+strings_q4
 questao4
 clc;
 disp('Fim da questão 4');
