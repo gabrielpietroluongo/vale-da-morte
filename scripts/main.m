@@ -3,6 +3,7 @@ clear
 
 # Carrega as strings do arquivo de strings
 addpath strings
+strings_all
 
 # Mostra a descrição do trabalho
 introd
