@@ -39,7 +39,9 @@ s_Graph_MM_Aprox_Exp = "O gráfico apresenta a aproximação realizada pelas \
 equações propostas por Michaelis-Menten para o ajuste à população de \
 bactérias. Apenas analisando visualmente o gráfico já é possível perceber \
 que o segundo caso de Michaelis-Menten se adequa melhor ao crescimento \
-populacional dessa bactéria.";
+populacional dessa bactéria. Além disso, podemos constatar matematicamente \
+que o segundo caso se adequa melhor analisando os valores de r² (o valor \
+de r² para o caso 2 é menor que o para o caso 1).";
 
 s_Est_Tax_7 = "Utilizando o modelo adequado (segundo caso), temos então que \
 a taxa de crescimento estimada em S = 7 é de %f";
