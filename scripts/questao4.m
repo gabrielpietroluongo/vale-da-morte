@@ -93,7 +93,6 @@ plot (xq, yq, ";Caso 1;", xq, yq2, ";Caso 2;", s, v, "*")
 title("Visualização gráfica do ajuste");
 xlabel("Concentração de O²");
 ylabel("Crescimento da bactéria");
-# r2s = [coef_determinacao(z,yq), coef_determinacao(s,Vcaso1Origial), coef_determinacao(z,yq2), coef_determinacao(v,Vcaso2Original)]
 
 pred_lin_1 = polyval(lin, x);
 pred_lin_2 = polyval(lin2, x);
