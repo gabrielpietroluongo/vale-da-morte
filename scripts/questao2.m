@@ -52,13 +52,13 @@ printf (s_Sol_Jacobi, s_First_Mat);
 if(bShouldUseCache != 1)
     [xJacobi, iterJacobi, resJacobi] = jacobi (A, b, tol, maxIter)
 else
-    load "../cache/fs_183_3/xJacobi_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/xJacobi_", s_First_Mat, ".cache"));
     disp("\n\n")
     xJacobi
-    load "../cache/fs_183_3/iterJacobi_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/iterJacobi_", s_First_Mat, ".cache"));
     disp("\n\n")
     iterJacobi
-    load "../cache/fs_183_3/resJacobi_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/resJacobi_", s_First_Mat, ".cache"));
     disp("\n\n")
     resJacobi
 endif;
@@ -72,13 +72,13 @@ if(bShouldUseCache != 1)
     # Gauss-Seidel -> SOR com w = 1
     [xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
 else
-    load "../cache/fs_183_3/xSeidel_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/xSeidel_", s_First_Mat, ".cache"));
     disp("\n\n")
     xSeidel
-    load "../cache/fs_183_3/iterSeidel_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/iterSeidel_", s_First_Mat, ".cache"));
     disp("\n\n")
     iterSeidel
-    load "../cache/fs_183_3/resSeidel_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/resSeidel_", s_First_Mat, ".cache"));
     disp("\n\n")
     resSeidel
 endif;
@@ -90,13 +90,13 @@ printf(s_Sol_SOR, s_First_Mat);
 if(bShouldUseCache != 1)
     [xSor, iterSor, resSor] = sor (A, b, tol, maxIter, 1)
 else
-    load "../cache/fs_183_3/xSor_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/xSor_", s_First_Mat, ".cache"));
     disp("\n\n")
     xSor
-    load "../cache/fs_183_3/iterSor_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/iterSor_", s_First_Mat, ".cache"));
     disp("\n\n")
     iterSor
-    load "../cache/fs_183_3/resSor_fs_183_3.cache";
+    load (strcat(cache_path, s_First_Mat, "/resSor_", s_First_Mat, ".cache"));
     disp("\n\n")
     resSor
 endif;
@@ -167,13 +167,13 @@ if(bShouldUseCache != 1)
     # Gauss-Seidel -> SOR com w = 1
     [xSeidel, iterSeidel, resSeidel] = sor (A, b, tol, maxIter, 1) 
 else
-    load "../cache/bcsstk01/xSeidel_bcsstk01.cache";
+    load (strcat(cache_path, s_Second_Mat, "/xSeidel_", s_Second_Mat, ".cache"));
     disp("\n\n")
     xSeidel
-    load "../cache/bcsstk01/iterSeidel_bcsstk01.cache";
+    load (strcat(cache_path, s_Second_Mat, "/iterSeidel_", s_Second_Mat, ".cache"));
     disp("\n\n")
     iterSeidel
-    load "../cache/bcsstk01/resSeidel_bcsstk01.cache";
+    load (strcat(cache_path, s_Second_Mat, "/resSeidel_", s_Second_Mat, ".cache"));
     disp("\n\n")
     resSeidel
 endif;
@@ -185,13 +185,13 @@ printf(s_Sol_SOR, s_Second_Mat);
 if(bShouldUseCache != 1)
     [xSor, iterSor, resSor] = sor (A, b, tol, maxIter, 1)
 else
-    load "../cache/bcsstk01/xSor_bcsstk01.cache";
+    load (strcat(cache_path, s_Second_Mat, "/xSor_", s_Second_Mat, ".cache"));
     disp("\n\n")
     xSor
-    load "../cache/bcsstk01/iterSor_bcsstk01.cache";
+    load (strcat(cache_path, s_Second_Mat, "/iterSor_", s_Second_Mat, ".cache"));
     disp("\n\n")
     iterSor
-    load "../cache/bcsstk01/resSor_bcsstk01.cache";
+    load (strcat(cache_path, s_Second_Mat, "/resSor_", s_Second_Mat, ".cache"));
     disp("\n\n")
     resSor
 endif;
