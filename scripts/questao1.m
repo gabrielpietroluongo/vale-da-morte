@@ -1,3 +1,6 @@
+clear -x bShouldUseCache
+strings_all
+strings_q1
 clc
 disp (s_Separator_100);
 disp (s_Intro_Direct);

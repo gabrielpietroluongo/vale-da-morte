@@ -86,4 +86,3 @@ disp(s_Graph_MM_Aprox_Exp);
 plot (xq, yq, ";Caso 1;", xq, yq2, ";Caso 2;", s, v, "*")
 input(s_Enter_Continue);
 close;
-clc;

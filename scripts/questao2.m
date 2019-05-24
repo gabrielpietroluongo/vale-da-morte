@@ -1,3 +1,6 @@
+clear -x bShouldUseCache
+strings_all
+strings_q2
 disp (s_Introd);
 disp (" ");
 input (s_Enter_Continue);
@@ -244,4 +247,3 @@ disp (s_Sol_Third_Mat_Analysis);
 disp("\n");
 
 input (s_Enter_Continue);
-clc
