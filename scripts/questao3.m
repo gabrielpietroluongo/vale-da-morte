@@ -3,9 +3,14 @@ clear -x bShouldUseCache
 strings_all
 strings_q3
 
-disp(s_Adjust_Exp)
-disp("\n")
-input(s_Enter_Continue);
+clc
+disp (s_Separator_100);
+disp (s_Intro_Adj);
+disp (s_Separator_100);
+disp ("\n");
+disp (s_Adjust_Exp)
+disp ("\n");
+input (s_Enter_Continue);
 clc;
 
 # Carregamento de arquivos

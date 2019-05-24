@@ -28,3 +28,7 @@ s_Enter_Continue = "Pressione Enter para continuar";
 s_Separator_100 = "----------------------------------------------------------------------------------------------------";
 
 s_Calculating = "Calculando...";
+
+s_Header = "--------------------------------------------------\nPrimeiro \
+trabalho de Algoritmos Numéricos\nProfª Andrea Valli\nDesenvolvido por \
+Gabriel Pietroluongo\n--------------------------------------------------\n";  

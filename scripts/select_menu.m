@@ -1,10 +1,5 @@
 clc;
-disp ('--------------------------------------------------');
-disp ('Primeiro trabalho de Algoritmos Numéricos'); 
-disp ('Profª Andrea Valli');
-disp ('Desenvolvido por Gabriel Pietroluongo');
-disp ('--------------------------------------------------');
-disp(' ');
+disp(s_Header);
 q = -1;
 while(1)
     q = menu("Menu Principal do Trabalho", "Apresentação Completa", 
@@ -15,30 +10,25 @@ while(1)
         case 1
             complete_pres;
             clc;
-            disp ('--------------------------------------------------');
-            disp ('Primeiro trabalho de Algoritmos Numéricos'); 
-            disp ('Profª Andrea Valli');
-            disp ('Desenvolvido por Gabriel Pietroluongo');
-            disp ('--------------------------------------------------');
-            disp(' ');
+            disp(s_Header);
+
         case 2
             questao1;
             clc;
-            disp ('--------------------------------------------------');
-            disp ('Primeiro trabalho de Algoritmos Numéricos'); 
-            disp ('Profª Andrea Valli');
-            disp ('Desenvolvido por Gabriel Pietroluongo');
-            disp ('--------------------------------------------------');
-            disp(' ');  
+            disp(s_Header);
+ 
         case 3
             questao2;
             clc;
+            disp(s_Header);
         case 4
             questao3;
             clc;
+        disp(s_Header);
         case 5
             questao4;
             clc;
+            disp(s_Header);
         case 6
             break;
     endswitch
